@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<AssignMessage name="TestQueryParam">
+    <DisplayName>populateHeaderFromQueryParam</DisplayName>
+    <AssignTo createNew="false" type="request"/>
+    <Set>
+        <Headers>
+            <Header name="test">{calloutResponse.content}</Header>
+        </Headers>
+    </Set>
+    <Remove>
+        <QueryParams>
+            <QueryParam name="greeting"/>
+        </QueryParams>
+    </Remove>
+</AssignMessage>
