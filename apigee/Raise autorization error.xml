@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<RaiseFault async="false" continueOnError="false" enabled="true" name="Raise-Fault-1">
-    <DisplayName>Raise Fault-1</DisplayName>
+<RaiseFault async="false" continueOnError="false" enabled="true" name="Raise authentication service errors">
     <Properties/>
     <FaultResponse>
         <Set>

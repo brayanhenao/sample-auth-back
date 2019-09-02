@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<AssignMessage name="Remove information from header">
+    <AssignTo createNew="false" type="request"/>
+    <Add>
+        <QueryParams>
+            <QueryParam name="key">{request.header.key}</QueryParam>
+        </QueryParams>
+    </Add>
+    <Remove>
+        <Headers>
+            <Header name="bearer_token"/>
+            <Header name="key"/>
+        </Headers>
+    </Remove>
+</AssignMessage>
