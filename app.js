@@ -9,15 +9,15 @@ app.get('/auth', (req, res) => {
 
     if (headers.bearer_token === token) {
         res.status(200).send({
+            code: 200,
+            message: 'Authorized'
         })
     } else {
         res.status(401).send({
+            code: 401,
+            message: 'Unauthorized'
         })
     }
-});
-
-app.get('/current', (req, res) => {
-    res.status(200).send(true);
 });
 
 const PORT = process.env.PORT || 5000;
