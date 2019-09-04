@@ -1,6 +1,6 @@
 var express = require('express');
 
-const token = 'AQIC5wM2LY4Sfcwlp2n6tEa-RQ6ECQWm0YAsGfX7GbWLoUY.*AAJTSQACMDIAAlNLABQtNDU0NTQ0NDAxMTY4OTY5OTMzMgACUzEAAjAx*';
+const token = '12345';
 
 const app = express();
 
