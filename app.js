@@ -7,7 +7,7 @@ const app = express();
 app.get('/auth', (req, res) => {
     var headers = req.headers;
 
-    if (headers.bearer_token === token) {
+    if (req.query.bearer_token === token) {
         res.status(200).send({
             code: 200,
             message: 'Authorized'
