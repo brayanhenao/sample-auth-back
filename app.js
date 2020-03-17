@@ -9,12 +9,12 @@ app.get('/auth', (req, res) => {
 
     if (req.query.bearer_token === token) {
         res.status(200).send({
-            code: 200,
+            status: 200,
             message: 'Authorized'
         })
     } else {
         res.status(401).send({
-            code: 401,
+            status: 401,
             message: 'Unauthorized'
         })
     }
