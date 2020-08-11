@@ -10,12 +10,12 @@ app.use(express.json())
 var petList = [
     {
         id: 1,
-        name: 'Annie',
+        name: 'Annie Patricia',
         age: 3
     },
     {
         id: 2,
-        name: 'Hulk',
+        name: 'Hulk Hogan',
         age: 5
     },
     {
@@ -28,6 +28,11 @@ var petList = [
         name: 'Max',
         age: 7
     },
+    {
+        id: 5,
+        name: 'Kira',
+        age: 8
+    },    
 ];
 
 app.get('/auth', (req, res) => {
